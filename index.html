@@ -1,0 +1,294 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>El's wishing room</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .movie-card {
+        transition: transform 0.3s ease;
+      }
+      .movie-card:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center p-4 bg-black fixed w-full z-10"
+    >
+      <div class="flex items-center space-x-4">
+        <img
+          alt="Happy birthday logo"
+          class="h-8"
+          height="50"
+          src="img/logo.png"
+          width="100"
+        />
+        <nav class="hidden md:flex space-x-4">
+          <a class="hover:text-gray-400" href="#"> Home </a>
+          <a class="hover:text-gray-400" href="#"> TV Shows </a>
+          <a class="hover:text-gray-400" href="#"> Movies </a>
+          <a class="hover:text-gray-400" href="#"> New &amp; Popular </a>
+          <a class="hover:text-gray-400" href="#"> Confession </a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <button class="md:hidden focus:outline-none" id="menu-button">
+          <i class="fas fa-bars text-white"> </i>
+        </button>
+        <i class="fas fa-search hover:text-gray-400"> </i>
+        <i class="fas fa-bell hover:text-gray-400"> </i>
+        <img
+          alt="User profile picture"
+          class="h-8 w-8 rounded-full object-cover"
+          height="30"
+          src="img/profile_img.png"
+          width="30"
+        />
+      </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div
+      class="hidden fixed inset-0 bg-black bg-opacity-90 z-20"
+      id="mobile-menu"
+    >
+      <div class="flex justify-end p-4">
+        <button class="focus:outline-none" id="close-menu-button">
+          <i class="fas fa-times text-white text-2xl"> </i>
+        </button>
+      </div>
+      <nav class="flex flex-col items-center space-y-4 mt-8">
+        <a class="hover:text-gray-400 text-xl" href="index.html"> Home </a>
+        <a class="hover:text-gray-400 text-xl" href="#"> TV Shows </a>
+        <a class="hover:text-gray-400 text-xl" href="#"> Movies </a>
+        <a class="hover:text-gray-400 text-xl" href="#"> New &amp; Popular </a>
+        <a class="hover:text-gray-400 text-xl" href="#"> Confession </a>
+      </nav>
+    </div>
+    <!-- Main Content -->
+    <main class="pt-16">
+      <!-- Hero Section -->
+      <section
+        class="relative h-screen bg-cover bg-center"
+        style="background-image: url('img/IMG_7481.JPEG')"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"
+        ></div>
+        <div class="absolute bottom-0 p-8">
+          <h1 class="text-5xl font-bold">Atla's Birthday</h1>
+          <p class="mt-4 text-lg max-w-xl">
+            Happy 18th birthday for the cutest girl i've ever met
+          </p>
+
+          <div class="mt-4 flex space-x-4">
+            <a href="information.html">
+              <button
+                class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded flex items-center space-x-2 hover:scale-110 transition duration-200"
+              >
+                <i class="fas fa-info-circle"> </i>
+                <span> More Info </span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Rows of Movies/Shows -->
+      <section class="p-8 space-y-8">
+        <!-- Row 1 -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Birthday Card</h2>
+          <div
+            class="flex space-x-4 overflow-auto whitespace-nowrap w-full p-2 no-scrollbar"
+          >
+            <a
+              href="Wishing1.html"
+              class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+              <img
+                alt="Wishing1"
+                height="300"
+                class="w-48 h-72 object-cover"
+                src="img/Card1-1.jpg"
+                width="200"
+              />
+            </a>
+            <a
+              href="Wishing2.html"
+              class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+              <img
+                alt="Wishing2"
+                height="300"
+                class="w-48 h-72 object-cover"
+                src="img/Card1-2.jpg"
+                width="200"
+              />
+            </a>
+            <a
+              href="Wishing3.html"
+              class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+              <img
+                alt="Wishing3"
+                height="300"
+                class="w-48 h-72 object-cover"
+                src="img/Card1-3.jpg"
+                width="200"
+              />
+            </a>
+            <a
+              href="Wishing4.html"
+              class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+              <img
+                alt="Wishing4"
+                height="300"
+                class="w-48 h-72 object-cover"
+                src="img/Card1-4.jpg"
+                width="200"
+              />
+            </a>
+            <a
+              href="Presensi.html"
+              class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+              <img
+                alt="Presensi"
+                height="300"
+                class="w-48 h-72 object-cover"
+                src="img/Presensi.png"
+                width="200"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Gifts</h2>
+          <div
+            class="flex space-x-4 overflow-auto whitespace-nowrap w-full p-2 no-scrollbar"
+          >
+            <a
+             href="Gift1.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Movie Ticket"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/movie.png"
+                width="200"
+             />
+            </a>
+            <a
+             href="Gift2.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Ice Cream Coupon"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/ice cream.png"
+                width="200"
+             />
+            </a>
+            <a
+             href="Gift3.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Study Coupon"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/study.png"
+                width="200"
+             />
+            </a>
+            <a
+             href="Gift4.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Arcade Coupon"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/arcade.png"
+                width="200"
+             />
+            </a>
+            <a
+             href="Gift5.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Custom Coupon"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/custom.png"
+                width="200"
+             />
+            </a>
+            <a
+             href="Gift6.html"
+             class="w-48 h-72 object-cover movie-card flex-shrink-0"
+            >
+             <img
+                alt="Surprise"
+                class="w-48 h-72 object-cover movie-card flex-shrink-0"
+                height="300"
+                src="img/surprise.png"
+                width="200"
+             />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-75 p-8">
+      <div class="max-w-6xl">
+        <div class="flex justify-between items-center mb-8">
+          <div class="flex space-x-4">
+            <a class="text-white hover:text-gray-400" href="#"> Kindly text me if you found any error(s). Thank you! </a>
+          </div>
+        </div>
+        <p class="text-gray-400">Made by El</p>
+      </div>
+    </footer>
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      closeMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
